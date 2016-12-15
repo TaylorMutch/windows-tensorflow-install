@@ -87,7 +87,7 @@ Tensorflow will now be able to load cuDNN without a fuss!
 ## CUPTI
 The [CUDA Profiling Tools Interface](http://docs.nvidia.com/cuda/cupti/) (CUPTI) is utilized by Tensorflow in a profiling sense for inspecting how well the GPU is handling the loads. Unfortunately, these are placed inside of `extras` directory inside of the installation directory for CUDA. We will need to make these available.
 
-The simplest way of doing this is by copying the CUPTI header (`.h`) and object library (`.lib`) into the main CUDA `bin` and `include` folders.
+The simplest way of doing this is by copying the CUPTI header (`.h`) and object library (`.lib`) into the main CUDA `bin` and `lib\x64` directories.
 
 To do this, assuming you installed CUDA into the default directory on Windows:
 
@@ -99,12 +99,12 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64\cupt
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cupti64_80.dll
 ```
 
-Now copy `cupti.lib` from the `\extras\CUPTI\libx64\` directory into the `\include\` directory:
+Now copy `cupti.lib` from the `\extras\CUPTI\libx64\` directory into the `\lib\x64\` directory:
 ```
 Copy cupti.lib
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64\cupti.lib
 # into...
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cupti.lib
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cupti.lib
 ```
 
 # Success!
