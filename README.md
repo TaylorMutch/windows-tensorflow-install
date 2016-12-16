@@ -60,6 +60,9 @@ Tensorflow requires additional dependencies from NVIDIA's GPU programming librar
 ## CUDA Toolkit
 GPU support requires the [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) and an [CUDA-enabled GPU](https://developer.nvidia.com/cuda-gpus) (see the extensive list of compatible GPUs). Most NVIDIA cards within the last 3 years will be CUDA-enabled. Additionally, the CUDA toolkit will install lots of additional drivers, including update video driver updates, that Tensorflow is dependent on.
 
+* **You must install CUDA. You will not be able to use GPU-enabled Tensorflow without it!**
+
+
 ## cuDNN
 NVIDIA's [CUDA Deep Neural Network](https://developer.nvidia.com/cudnn) (cuDNN) is utilized by Tensorflow for performing much of the heavy lifting for running Depp Neural Networks, and will be necessary for any utilizing of Tensorflow on the GPU.
 
