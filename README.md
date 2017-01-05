@@ -45,14 +45,14 @@ Tensorflow can be used independent of GPUs, and is a great way for testing small
 ### CPU-only support
 CPU-only only requires the `pip` installation from the Google cloud storage.
 ```
-pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0rc1-cp35-cp35m-win_amd64.whl
+pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.1-cp35-cp35m-win_amd64.whl
 ```
 You now have a working installation of Tensorflow - woohoo!
 
 ### GPU support
 GPU support requires a different `pip` installation from the Google cloud storage. The Tensorflow team is very good about releasing `cpu` and `gpu` builds concurrently, so you can edit the line from the CPU-only swapping `gpu` for `cpu`. Or, you can copy-paste the line below.
 ```
-pip install --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.0rc1-cp35-cp35m-win_amd64.whl
+pip install --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-win_amd64.whl
 ```
 
 Tensorflow requires additional dependencies from NVIDIA's GPU programming library, CUDA, to utilize the GPU. Without these dependencies, Tensorflow will not work properly whatsoever.
